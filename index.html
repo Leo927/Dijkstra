@@ -10,23 +10,38 @@
 	<script type="text/javascript" src="dijkstra.js"></script>
 </head>
 <body>
-	<section class="container">
+	<main class="container">
+		<div class="row">
+			<h1 class="col-12 text-center">Songhao's Dijkstra implmenetation</h1>
+		</div>
+		<section class="row">
+			<h2 class="col-12">Instructions</h2>
+			<div class="col-6">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">Change starting vectis</li>
+					<li class="list-group-item">Change from in json</li>
+					<li class="list-group-item">Change to in json</li>
+					<li class="list-group-item">Change cost in json</li>
+					<li class="list-group-item">Add new object in json</li>
+				</ul>
+			</div>
+		</section>
 		<div class="row">
 			
-				<div class="col-6">
-					<label for="startVectis">starting vectis</label>
-					<input class="form-control" type="text" id="startVectis" value="A">
-					<label for="graphInput">following is the json object for the graph</label>
+			<div class="col-6">
+				<label class="badge badge-primary" for="startVectis">starting vectis</label>
+				<input class="form-control" type="text" id="startVectis" value="A">
+				<label class="badge badge-primary" for="graphInput">Graph Json object</label>
 
-					<textarea class="form-control" id="graphInput" rows="30"></textarea>
-				</div>
-				
-				<div class="col-6">
-					<label for="resultPaths">The cheapest route to each node from </label> <span id="displayStartVectis">A</span>
+				<textarea class="form-control" id="graphInput" rows="30"></textarea>
+			</div>
 
-					<textarea class="form-control" id="resultPaths" rows="30" disabled></p>
+			<div class="col-6">
+				<label class="badge badge-primary" for="resultPaths">Paths To </label> <span id="displayStartVectis">A</span>
+
+				<textarea class="form-control" id="resultPaths" rows="30" disabled></p>
 				</div>
-		</div>
-	</section>
-</body>
-</html>
+			</div>
+		</main>
+	</body>
+	</html>

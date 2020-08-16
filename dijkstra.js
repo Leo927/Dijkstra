@@ -103,8 +103,9 @@ function handleInput(){
 
 	var result = findCheapeatPathsDijkstra(start,graph);
 	var paths = buildPath(start, result);
-	
+	$('#displayStartVectis')[0].textContent = $('#startVectis')[0].value;
 	$('#resultPaths')[0].value= JSON.stringify(paths, null,'\t');
+
 }
 
 function buildPath(start, result)
